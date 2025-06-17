@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'fonte-titulo';
+    src: url(./fontes/GavolineDemo.otf);
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+:root{
+    --cor1: hsl(0, 84%, 10%);
+    --cor2: rgb(165, 135, 108);
+    --cor3: rgb(134, 95, 58);
+    --cor4: rgb(67, 47, 29);
+}
+
+body{
+    background-image: url(./imagens/fundoo-animaiss.jpg);
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "fonte-titulo", sans-serif;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+    color: var(--cor1);
+}
+
+.categorias{
+    background-image: url(./imagens/fundo.jpg);
+    border-radius: 20px;
+    padding: 10px;
+}
+.tecla {
+    background-color: var(--cor3);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px var(--cor4);
+    color: white;
+    width: 120px;
+    height: 80px;
+    font-weight: bold;
+    margin: 40px;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    align-items: flex;
+    cursor: pointer;
+  }
+  
+  .tecla:hover {
+    background-color: var(--cor2);
+    color: var(--cor1); 
+  }
+ 
+  .quadro-branco img{
+    width: 200px;
+    max-width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    
+}
+
+.voltar {
+    margin-top: 40px;
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px var(--cor4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.voltar:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
